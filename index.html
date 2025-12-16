@@ -1,160 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dev Lokhande – Portfolio</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:"Poppins", sans-serif; }
-    body { background:#0d0d0d; color:#fff; }
-    a { text-decoration:none; color:inherit; }
-
-    /* NAVBAR */
-    nav {
-      width:100%; padding:20px 40px; position:fixed; top:0; left:0;
-      display:flex; justify-content:space-between; align-items:center;
-      background:rgba(0,0,0,0.55); backdrop-filter:blur(12px);
-      z-index:10;
-    }
-    nav h1 { font-size:26px; font-weight:600; letter-spacing:1px; }
-    nav ul { list-style:none; display:flex; gap:30px; }
-    nav ul li a:hover { color:#ff7a00; }
-
-    /* HERO INTRO */
-    .hero {
-      min-height:100vh; padding:0 40px;
-      display:flex; align-items:center; justify-content:space-between;
-      background:linear-gradient(145deg,#0f0f0f,#1b1b1b);
-    }
-    .hero-text h2 { font-size:54px; font-weight:700; line-height:1.2; }
-    .hero-text p { margin-top:20px; font-size:20px; opacity:0.8; max-width:500px; }
-    .skill-box { margin-top:30px; display:flex; flex-wrap:wrap; gap:12px; }
-    .skill { padding:8px 16px; background:#ff7a00; border-radius:8px; font-weight:600; }
-    .hero-img img {
-      width:330px; height:330px; border-radius:50%; object-fit:cover;
-      box-shadow:0 0 25px rgba(255,122,0,0.5);
-    }
-
-    /* SECTION TEMPLATE */
-    .section { padding:100px 40px; max-width:1200px; margin:auto; }
-    .section h2 { font-size:40px; margin-bottom:40px; }
-
-    /* INTERESTS */
-    .interests-list { display:flex; flex-wrap:wrap; gap:20px; }
-    .interest-item { background:#1a1a1a; padding:20px 25px; border-radius:12px; font-size:20px; }
-
-    /* SLIDER PROJECTS */
-    .slider-container { position:relative; overflow:hidden; }
-    .slider { display:flex; gap:20px; transition:transform .6s; }
-    .slide {
-      min-width:300px; background:#1a1a1a; padding:20px; border-radius:12px;
-      box-shadow:0 0 20px rgba(255,255,255,0.05);
-    }
-    .slide h3 { margin-bottom:10px; }
-    .slide p { opacity:0.8; }
-
-    .slider-btn {
-      margin-top:20px; padding:12px 24px; background:#ff7a00; border-radius:8px;
-      font-weight:600; display:inline-block; cursor:pointer;
-    }
-
-    /* CONTACT */
-    .contact p { margin-top:10px; font-size:18px; opacity:0.85; }
-
-    footer { padding:20px; text-align:center; opacity:0.5; margin-top:40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Lokhande | Advanced Automotive Systems & Mechatronics Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
-    <h1>Dev Lokhande</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <header class="header">
+        <div class="logo">DEV LOKHANDE</div>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">TECH STACK</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact" class="cta-link">CONTACT</a>
+        </nav>
+    </header>
 
-  <!-- HERO INTRO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Hello, I'm Dev Lokhande</h2>
-      <p>An Automobile Engineer passionate about CAD design, electronics, FSAE systems, and advanced engineering builds.</p>
-      <div class="skill-box">
-        <div class="skill">CAD Design</div>
-        <div class="skill">Electronics</div>
-        <div class="skill">Circuit Design</div>
-        <div class="skill">FSAE Systems</div>
-        <div class="skill">Mechanics</div>
-        <div class="skill">Automotive</div>
-      </div>
-    </div>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Designing the Future of **High-Performance** Automotive Systems.</h1>
+            <p>Automotive Engineer specializing in advanced CAD/FEA, embedded electronics, and FSAE systems integration. Turning complex engineering challenges into robust, measurable solutions.</p>
+            <a href="#projects" class="cta-button">EXPLORE MY WORK &rarr;</a>
+            <a href="Dev_Lokhande_CV.pdf" class="secondary-button" target="_blank">DOWNLOAD CV (PDF)</a>
+        </div>
+        <div class="hero-image-container">
+            <img src="myphoto.jpeg" alt="Professional Photo of Dev Lokhande" class="profile-photo">
+        </div>
+    </section>
 
-    <div class="hero-img">
-      <img src="myphoto.jpeg" alt="Dev Photo" />
-    </div>
-  </section>
+    <section id="about" class="section">
+        <h2>01. **THE ENGINEER**</h2>
+        <div class="about-grid">
+            <p class="about-text">
+                I am driven by the intersection of mechanics and microcontrollers. My background as an Automobile Engineer has evolved into a focus on high-reliability circuit design (e.g., FSAE BSPD) and precision CAD modeling (e.g., Chassis design). I approach every project with a **first-principles mindset**, ensuring all solutions are structurally sound, electronically robust, and performance-optimized. I am currently seeking a role in Mechatronics or R&D where I can apply my full stack of skills.
+            </p>
+            <div class="highlight-box">
+                <p class="highlight-title">CORE PHILOSOPHY</p>
+                <p>"Optimization is not a feature; it is a necessity."</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- INTERESTS -->
-  <section class="section" id="interests">
-    <h2>My Interests</h2>
-    <div class="interests-list">
-      <div class="interest-item">Automobile Engineering</div>
-      <div class="interest-item">Electronics & Circuits</div>
-      <div class="interest-item">CAD & 3D Design</div>
-      <div class="interest-item">Aerodynamics</div>
-      <div class="interest-item">Motorsports (FSAE)</div>
-      <div class="interest-item">Microcontrollers</div>
-    </div>
-  </section>
+    <section id="skills" class="section dark-section">
+        <h2>02. **TECH STACK** & DOMAINS</h2>
+        <div class="skills-container">
+            <div class="skill-group">
+                <h3>CAD/FEA/SIMULATION</h3>
+                <ul>
+                    <li>SolidWorks & CATIA (Expert)</li>
+                    <li>ANSYS Fluent (Aerodynamics)</li>
+                    <li>Lattice Structure Design</li>
+                    <li>Geometric Dimensioning & Tolerancing (GD&T)</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <h3>ELECTRONICS & EMBEDDED</h3>
+                <ul>
+                    <li>Altium Designer / KiCad</li>
+                    <li>Microcontroller Programming (Arduino/STM32)</li>
+                    <li>High-Current Power Electronics</li>
+                    <li>Safety Circuitry (FSAE Compliance)</li>
+                </ul>
+            </div>
+             <div class="skill-group">
+                <h3>AUTOMOTIVE & MECH</h3>
+                <ul>
+                    <li>Formula Student (FSAE) Systems</li>
+                    <li>Vehicle Dynamics & Suspension</li>
+                    <li>Mechanics & Stress Analysis</li>
+                    <li>Aerodynamic Testing & Validation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <!-- PROJECTS SLIDER -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+    <section id="projects" class="section">
+        <h2>03. **FEATURED PROJECTS**</h2>
+        <p class="section-subtitle">A curated selection demonstrating **system-level thinking** and robust execution.</p>
 
-    <div class="slider-container">
-      <div class="slider" id="slider">
-        <div class="slide"><h3>3ft Wind Tunnel</h3><p>A functional tabletop wind tunnel for aero testing.</p></div>
-        <div class="slide"><h3>Fibonacci Turbine</h3><p>Turbine using Fibonacci spiral for airflow efficiency.</p></div>
-        <div class="slide"><h3>BSPD (FSAE)</h3><p>Safety circuit using comparators & logic.</p></div>
-        <div class="slide"><h3>Chassis CAD</h3><p>Formula Student chassis & geometry work.</p></div>
-        <div class="slide"><h3>RR Unit</h3><p>LM317 + 2N3055 high-current RR unit.</p></div>
-      </div>
-    </div>
+        <div class="project-card">
+            <div class="project-details">
+                <h3>01. 3ft AERODYNAMIC VALIDATION TUNNEL</h3>
+                <p class="project-tech"><span>Keywords:</span> Aerodynamics, Data Acquisition, Validation, Fabrication</p>
+                <p>Designed and precision-fabricated a functional, low-speed, open-loop tabletop wind tunnel with integrated anemometry. **Purpose:** To conduct repeatable, scaled-down aerodynamic force testing and validate CFD models, establishing a robust link between simulation and physical reality.</p>
+                <a href="[LINK_TO_PROJECT_PAGE_OR_GITHUB]" class="project-link">View Detailed Case Study &rarr;</a>
+            </div>
+            </div>
 
-    <div class="slider-btn" onclick="nextSlide()">Next →</div>
-    <br><br>
-    <a class="slider-btn" href="all-projects.html">View All Projects</a>
-  </section>
+        <div class="project-card reverse">
+            <div class="project-details">
+                <h3>02. FSAE BSPD (Brake System Plausibility Device)</h3>
+                <p class="project-tech"><span>Keywords:</span> High-Reliability Circuit Design, Comparator Logic, FSAE Rules</p>
+                <p>Engineered and tested a critical safety circuit compliant with Formula Student rules. Utilizing **precision voltage comparators and dedicated logic gates**, this system independently verifies brake and accelerator pedal inputs, ensuring immediate power cutoff in fault conditions for maximum driver safety.</p>
+                <a href="[LINK_TO_PROJECT_PAGE_OR_GITHUB]" class="project-link">View Schematic & Testing &rarr;</a>
+            </div>
+            </div>
 
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: yourmail@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <br>
-    <a class="slider-btn" href="Dev_Lokhande_CV.pdf" download>Download My CV</a>
-  </section>
+        <div class="project-card">
+            <div class="project-details">
+                <h3>03. HIGH-CURRENT REGULATOR/RECTIFIER UNIT</h3>
+                <p class="project-tech"><span>Keywords:</span> Power Electronics, LM317, 2N3055, Thermal Management</p>
+                <p>Developed a custom, high-current (up to 10A) Voltage Regulator/Rectifier (RR) unit utilizing a high-power pass transistor (2N3055) driven by an LM317 regulator. **Focus:** Stable output under high load and optimized thermal dissipation for continuous operation in demanding automotive environments.</p>
+                <a href="[LINK_TO_PROJECT_PAGE_OR_GITHUB]" class="project-link">View Build Log &rarr;</a>
+            </div>
+            </div>
 
-  <footer>© 2025 Dev Lokhande</footer>
+        <a href="all-projects.html" class="cta-button full-width-cta">VIEW ALL PROJECTS INDEX (10+)</a>
 
-  <script>
-    let index = 0;
-    function nextSlide() {
-      const slider = document.getElementById('slider');
-      index++;
-      if (index > 2) index = 0;
-      slider.style.transform = `translateX(${-index * 320}px)`;
-    }
-  </script>
+    </section>
+
+    <section id="contact" class="section dark-section">
+        <h2>04. **LET'S CONNECT**</h2>
+        <p class="section-subtitle">Ready to discuss challenging projects in Mechatronics or Automotive R&D.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:your.professional.email@domain.com">your.professional.email@domain.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofilename" target="_blank">linkedin.com/in/yourprofilename</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/DevLokhande" target="_blank">github.com/DevLokhande</a></p>
+            </div>
+        <p class="final-line">**Curiosity drives innovation.** Let's build something significant.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dev Lokhande. Built with Precision and Passion.</p>
+    </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
