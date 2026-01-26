@@ -431,9 +431,10 @@ footer {
 }
 
 .skills-container.horizontal-scroll .skill-group {
-  min-width: 320px;
+  min-width: 420px;
   flex-shrink: 0;
 }
+
 
 
 
