@@ -368,3 +368,36 @@ footer {
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+
+  .window {
+    width: 92%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    height: 220px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+  }
+
+  .arrow {
+    font-size: 32px;
+  }
+
+  .left { left: 10px; }
+  .right { right: 10px; }
+}
+
+
