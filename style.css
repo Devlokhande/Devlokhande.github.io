@@ -399,47 +399,28 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
-/* Horizontal scroll for main skill boxes */
-.horizontal-scroll {
-  display: flex;
-  gap: 30px;
+/* ===== CLEAN HORIZONTAL SCROLL FOR SKILLS ===== */
+
+.skills-scroll-wrapper {
+  width: 100%;
   overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-behavior: smooth;
 }
 
-.horizontal-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-/* Make skill boxes scrollable cards */
-.skill-group {
-  min-width: 320px;
-  flex-shrink: 0;
-}
-/* OVERRIDE grid → enable horizontal scroll */
 .skills-container.horizontal-scroll {
   display: flex !important;
   gap: 30px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-}
-
-.skills-container.horizontal-scroll::-webkit-scrollbar {
-  display: none;
+  width: max-content;
+  padding: 20px;
 }
 
 .skills-container.horizontal-scroll .skill-group {
   min-width: 420px;
   flex-shrink: 0;
 }
-.skills-container.horizontal-scroll {
-  padding-left: 20px;
-  padding-right: 20px;
+
+.skills-scroll-wrapper::-webkit-scrollbar {
+  display: none;
 }
-
-
 
 
 
