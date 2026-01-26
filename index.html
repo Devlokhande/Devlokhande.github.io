@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-    <script>
+    
+<script>
   const skillsScroll = document.querySelector('.skills-scroll-window');
 
   skillsScroll.addEventListener('wheel', (e) => {
@@ -16,19 +17,15 @@
       skillsScroll.scrollLeft + skillsScroll.clientWidth >=
       skillsScroll.scrollWidth - 1;
 
-    // Only hijack scroll if horizontal movement is possible
     if (
-      (e.deltaY < 0 && !atStart) ||   // scrolling up, can go left
-      (e.deltaY > 0 && !atEnd)        // scrolling down, can go right
+      (e.deltaY < 0 && !atStart) ||
+      (e.deltaY > 0 && !atEnd)
     ) {
       e.preventDefault();
       skillsScroll.scrollLeft += e.deltaY;
     }
-    // else → allow normal page scroll
   }, { passive: false });
 </script>
-
-
 <body>
 
     <header class="header">
@@ -162,6 +159,7 @@
 
 </body>
 </html>
+
 
 
 
