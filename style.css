@@ -399,28 +399,5 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
-/* ===== CLEAN HORIZONTAL SCROLL FOR SKILLS ===== */
-
-.skills-scroll-wrapper {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.skills-container.horizontal-scroll {
-  display: flex !important;
-  gap: 30px;
-  width: max-content;
-  padding: 20px;
-}
-
-.skills-container.horizontal-scroll .skill-group {
-  min-width: 420px;
-  flex-shrink: 0;
-}
-
-.skills-scroll-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
 
 
