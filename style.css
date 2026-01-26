@@ -409,18 +409,7 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
-.skills-container::-webkit-scrollbar {
-    height: 6px;
-}
 
-.skills-container::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
-    border-radius: 10px;
-}
-
-.skills-container::-webkit-scrollbar-track {
-    background: transparent;
-}
 .skills-scroll-window {
     overflow-x: auto;
     overflow-y: hidden;
@@ -438,6 +427,7 @@ footer {
     min-width: 340px;
     flex-shrink: 0;
 }
+
 
 
 
