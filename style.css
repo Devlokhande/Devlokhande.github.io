@@ -399,5 +399,17 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skill-group {
+  background: #1c222b;
+  padding: 24px;
+  border-radius: 12px;
+}
+
 
 
