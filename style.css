@@ -399,3 +399,22 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+/* Horizontal scroll for main skill boxes */
+.horizontal-scroll {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Make skill boxes scrollable cards */
+.skill-group {
+  min-width: 320px;
+  flex-shrink: 0;
+}
+
