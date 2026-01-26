@@ -136,27 +136,30 @@
     <footer>
         <p>&copy; 2025 Dev Lokhande. Built with Precision and Passion.</p>
     </footer>
-<script>
+    <script>
   const skillsScroll = document.querySelector('.skills-scroll-window');
 
-  skillsScroll.addEventListener('wheel', (e) => {
-    const atStart = skillsScroll.scrollLeft === 0;
-    const atEnd =
-      skillsScroll.scrollLeft + skillsScroll.clientWidth >=
-      skillsScroll.scrollWidth - 1;
+  if (skillsScroll) {
+    skillsScroll.addEventListener('wheel', (e) => {
+      const atStart = skillsScroll.scrollLeft === 0;
+      const atEnd =
+        skillsScroll.scrollLeft + skillsScroll.clientWidth >=
+        skillsScroll.scrollWidth - 1;
 
-    if (
-      (e.deltaY < 0 && !atStart) ||
-      (e.deltaY > 0 && !atEnd)
-    ) {
-      e.preventDefault();
-      skillsScroll.scrollLeft += e.deltaY;
-    }
-  }, { passive: false });
+      if (
+        (e.deltaY < 0 && !atStart) ||
+        (e.deltaY > 0 && !atEnd)
+      ) {
+        e.preventDefault();
+        skillsScroll.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
+  }
 </script>
 
 </body>
 </html>
+
 
 
 
