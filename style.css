@@ -421,6 +421,24 @@ footer {
 .skills-container::-webkit-scrollbar-track {
     background: transparent;
 }
+.skills-scroll-window {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    gap: 2rem;
+    width: max-content; /* THIS is the key */
+}
+
+.skill-group {
+    min-width: 340px;
+    flex-shrink: 0;
+}
+
 
 
 
