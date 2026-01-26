@@ -434,6 +434,11 @@ footer {
   min-width: 420px;
   flex-shrink: 0;
 }
+.skills-container.horizontal-scroll {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 
 
