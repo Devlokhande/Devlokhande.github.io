@@ -410,32 +410,7 @@ footer {
   .right { right: 10px; }
 }
 
-/* === Horizontal Skills Scroll === */
 
-.skills-scroll-window {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 1.5rem;
-}
-
-.skills-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    width: max-content;   /* 🔥 THIS forces overflow */
-}
-
-.skill-group {
-    min-width: 360px;
-    max-width: 360px;
-    flex-shrink: 0;
-
-    background-color: var(--color-background);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-}
 
 
 
