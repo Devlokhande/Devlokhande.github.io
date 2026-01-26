@@ -209,7 +209,7 @@ nav a {
 .skill-group {
     padding: 1.5rem;
     background-color: var(--color-background);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -399,5 +399,6 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+
 
 
