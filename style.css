@@ -198,6 +198,8 @@ nav a {
 /* --- Skills Section --- */
 .dark-section {
     background-color: var(--color-card);
+    max-width: none;
+    width: 100%;
 }
 
 .skills-container {
@@ -399,6 +401,7 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+
 
 
 
