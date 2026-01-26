@@ -412,17 +412,6 @@ footer {
   .right { right: 10px; }
 }
 
-/* --- Skills scroll cursor --- */
-.skills-scroll-window {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.skills-container {
-  display: flex;
-  gap: 2rem;
-  width: max-content;
-}
 
 
 
