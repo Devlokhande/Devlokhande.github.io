@@ -414,14 +414,15 @@ footer {
 
 /* --- Skills scroll cursor --- */
 .skills-scroll-window {
-  cursor: grab;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
-.skills-scroll-window:active {
-  cursor: grabbing;
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
 }
-
-
 
 
 
