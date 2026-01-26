@@ -399,47 +399,7 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
-/* Horizontal Tech Stack Scroll */
-.tech-scroll-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-}
 
-.tech-scroll {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 20px;
-  scroll-behavior: smooth;
-}
-
-.tech-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.tech-card {
-  min-width: 260px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  text-align: center;
-  flex-shrink: 0;
-  font-weight: 500;
-}
-
-.scroll-btn {
-  background: none;
-  border: none;
-  font-size: 36px;
-  cursor: pointer;
-  color: #00d1c7;
-  padding: 0 10px;
-}
-
-.scroll-btn:hover {
-  opacity: 0.8;
-}
 
 
 
