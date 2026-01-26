@@ -399,34 +399,5 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.skill-group {
-  background: #1c222b;
-  padding: 24px;
-  border-radius: 12px;
-}
-/* ===== Section 01 unified box ===== */
-.big-box {
-  border: 2px solid #333;
-  border-radius: 12px;
-  padding: 20px;
-  background: #0f0f0f;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.big-box .item {
-  padding: 10px 14px;
-  border-radius: 8px;
-  background: #1c1c1c;
-}
-
-
 
 
