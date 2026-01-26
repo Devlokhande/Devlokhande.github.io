@@ -417,4 +417,23 @@ footer {
   min-width: 320px;
   flex-shrink: 0;
 }
+/* OVERRIDE grid → enable horizontal scroll */
+.skills-container.horizontal-scroll {
+  display: flex !important;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.skills-container.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.skills-container.horizontal-scroll .skill-group {
+  min-width: 320px;
+  flex-shrink: 0;
+}
+
+
 
