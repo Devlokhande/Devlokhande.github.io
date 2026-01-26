@@ -410,6 +410,23 @@ footer {
   padding: 24px;
   border-radius: 12px;
 }
+/* ===== Section 01 unified box ===== */
+.big-box {
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.big-box .item {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #1c1c1c;
+}
+
 
 
 
