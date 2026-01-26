@@ -203,16 +203,24 @@ nav a {
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
     gap: 2rem;
-}
 
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
 .skill-group {
     padding: 1.5rem;
     background-color: var(--color-background);
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    min-width: 320px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .skill-group h3 {
@@ -401,6 +409,19 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+.skills-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.skills-container::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+
+.skills-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 
 
 
