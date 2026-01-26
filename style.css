@@ -239,6 +239,10 @@ nav a {
     padding: 0.3rem 0;
     font-size: 0.95em;
 }
+.skills-scroll-window {
+    scroll-behavior: smooth;
+}
+
 
 /* --- Projects Section --- */
 .project-card {
@@ -410,6 +414,7 @@ footer {
   .left { left: 10px; }
   .right { right: 10px; }
 }
+
 
 
 
