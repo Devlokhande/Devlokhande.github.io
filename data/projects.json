@@ -1,0 +1,35 @@
+[
+  {
+    "id": "wind-tunnel",
+    "title": "3 ft aerodynamic validation tunnel",
+    "category": "AERODYNAMICS · TESTING · FABRICATION",
+    "summary": "Designed and fabricated an open-loop subsonic wind tunnel to support aerodynamic testing and compare simulation outcomes with physical behaviour.",
+    "objective": "Build an open-loop subsonic wind tunnel to support physical evaluation of Formula Student aerodynamic packages.",
+    "contribution": "Concept development, structural design and analysis, fabrication planning and validation approach.",
+    "details": "Add your test-section dimensions, fan specification, flow uniformity method, measurement equipment, calibration, and comparison between CFD and physical results.",
+    "images": [],
+    "featured": true
+  },
+  {
+    "id": "bspd",
+    "title": "Brake system plausibility device",
+    "category": "FSAE · ELECTRONICS · SAFETY",
+    "summary": "Worked on a safety circuit concept using signal comparison and fail-safe logic to detect implausible brake and accelerator input conditions.",
+    "objective": "Develop a safety circuit concept to identify implausible brake and accelerator input conditions.",
+    "contribution": "Signal conditioning, comparator logic, fail-safe considerations, schematic development and functional testing.",
+    "details": "Add the relevant rule reference and year, circuit schematic, component selection, threshold calculations, fault cases, test procedure and measured response time.",
+    "images": [],
+    "featured": true
+  },
+  {
+    "id": "regulator",
+    "title": "Regulator / rectifier unit",
+    "category": "POWER ELECTRONICS · THERMAL DESIGN",
+    "summary": "Developed a regulator/rectifier concept focused on stable voltage output, power-device selection and thermal considerations for an automotive application.",
+    "objective": "Explore a regulated power supply design for an automotive electrical application.",
+    "contribution": "Power-device selection, voltage regulation concept, thermal management and output stability considerations.",
+    "details": "Add input/output specifications, circuit diagram, load-test results, heatsink sizing, thermal measurements, protection strategy and limitations.",
+    "images": [],
+    "featured": true
+  }
+]
