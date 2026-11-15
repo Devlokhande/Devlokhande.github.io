@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="projects-public.js" defer></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -19,7 +20,7 @@
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
     <nav class="site-nav" id="site-nav">
       <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Selected work</a><a href="#contact" class="nav-cta">Let's connect <span>↗</span></a>
-    </nav>
+    <div class="add-menu"><button class="add-nav" type="button" aria-expanded="false">ADD <span>＋</span></button><div class="add-menu-items"><a href="admin.html#projects">Add Projects</a><a href="admin.html#cv">Add CV</a></div></div></nav>
   </header>
 
   <main>
@@ -79,11 +80,7 @@
 
     <section class="section shell" id="work">
       <div class="work-heading reveal"><div class="section-heading"><p class="eyebrow">03 — SELECTED WORK</p><h2>Built, tested<br><span class="muted">&amp; learned.</span></h2></div><a class="text-link all-projects-link" href="projects.html">View project index <span>↗</span></a></div>
-      <div class="project-list">
-        <article class="project-row reveal"><div class="project-number">01</div><div class="project-main"><p class="project-type">AERODYNAMICS · TESTING · FABRICATION</p><h3>3 ft aerodynamic<br>validation tunnel</h3><p>Designed and fabricated an open-loop subsonic wind tunnel to support aerodynamic testing and compare simulation outcomes with physical behaviour.</p><a href="projects.html#wind-tunnel" class="text-link">Explore project <span>↗</span></a></div><div class="project-art art-wind"><div class="wind-lines"></div><span>FLOW / 001</span></div></article>
-        <article class="project-row reveal"><div class="project-number">02</div><div class="project-main"><p class="project-type">FSAE · ELECTRONICS · SAFETY</p><h3>Brake system<br>plausibility device</h3><p>Worked on a safety circuit concept using signal comparison and fail-safe logic to detect implausible brake and accelerator input conditions.</p><a href="projects.html#bspd" class="text-link">Explore project <span>↗</span></a></div><div class="project-art art-circuit"><div class="circuit-board"><span>BSPD</span><i></i><i></i><i></i><b></b></div><span>CONTROL / 002</span></div></article>
-        <article class="project-row reveal"><div class="project-number">03</div><div class="project-main"><p class="project-type">POWER ELECTRONICS · THERMAL DESIGN</p><h3>Regulator /<br>rectifier unit</h3><p>Developed a regulator/rectifier concept focused on stable voltage output, power-device selection and thermal considerations for an automotive application.</p><a href="projects.html#regulator" class="text-link">Explore project <span>↗</span></a></div><div class="project-art art-power"><div class="power-symbol">±</div><span>POWER / 003</span></div></article>
-      </div>
+      <div class="project-list" id="featured-projects"><p class="projects-loading">Loading selected projects…</p></div>
     </section>
 
     <section class="section experience-section">
